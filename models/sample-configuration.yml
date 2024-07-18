@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: sample_source_name # this is the source_name
+    schema: sampledbtdataset
+
+    tables:
+      - name: sampledbttable # this is the table_name

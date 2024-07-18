@@ -1,0 +1,4 @@
+# dbt_project.yml
+name: samplename
+dbt-cloud:
+    project-id: 70403103944655

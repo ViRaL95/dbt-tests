@@ -1,0 +1,14 @@
+unit_tests:
+  - name: test_customer_data
+    description: "Testing customer data"
+    model: customer_data
+    given:
+      - input: ref('sample_model')
+        rows:
+          - {first_name: bob,    last_name: jones}
+          - {first_name: mark,    last_name: smith}
+    expect:
+      rows:
+        - {first_name: bob, last_name: jones}
+        - {first_name: mark, last_name: smith}
+        - {first_name: john, last_name: jones}
